@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: aliceblue;
+}
+
+
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 65px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+
+    color: #fff;
+    margin: 0 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(23, 23, 23, 0.5);
+    color: #F7941D;
+}
+
+.login {
+    float: right;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login a:hover {
+    color: #F7941D;
+}
+
+
+.new-product {
+    padding: 2.5rem 5.5rem;
+}
+
+.new-product h1 {
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    width: fit-content;
+    margin-bottom: 20px !important;
+    cursor: default;
+    position: relative;
+}
+
+.new-product h1::after {
+    content: "";
+    background-color: rgb(151, 10, 10);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all .6s;
+}
+
+.new-product h1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.new-product1 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.product-item1>div {
+    text-align: center;
+}
+
+.product-item1>div>p:first-child {
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.product-item1>div>p:last-child {
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #333333;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 1170px;
+    background-color: #F7941D;
+    margin: auto;
+}
+
+.footer1 {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.footer-col h4 {
+    margin-left: 37px;
+    font-size: 22px;
+    color: #fff;
+    /* font-style: italic; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize
+}
+
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+.footer-col ul li a {
+    color: #333333;
+
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    margin-left: 8px;
+}
+
+.footer-col ul a i {
+    margin-left: 8px;
+
+}
